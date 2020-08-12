@@ -23,4 +23,4 @@ jobs:
         cd $CLONE_DIR
         git checkout "$REPO_BRANCH"
         git remote add replicate "https://$API_TOKEN_GITHUB@github.com/$GITHUB_USERNAME/$GITHUB_REPO.git"
-        git push replicate "$REPO_BRANCH"
+        git push replicate "$REPO_BRANCH" --force
